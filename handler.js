@@ -3067,12 +3067,16 @@ Saya *${botname}*, Bot Ini Adalah Beta Multi-Device WhatsApp.
 Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
 ──────────────
   _> *INFO BOT*_
-👑 Creator : *Lexxy Official*
+👑 Creator : *Bar*
 👤 Owner : *${ownername}*
 🤖 Bot Name : *${botname}*
 📑 Tanggal : *${tanggal}*
 ⏰ Waktu : *${time}*
 🗒 ️Prefix : *Multi Prefix*
+──────────────
+_*🇬🇧 : List of features in this bot*_.
+_*🇮🇩 : Daftar Fitur Yang Ada Di Bot Ini*_.
+_*🇯🇵 : このボットの機能のリスト*_.
 ──────────────
  ❏ *Group Menu*
 • #linkgroup
@@ -3343,24 +3347,9 @@ Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
 `
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Source Code',
-                                    url: 'https://github.com/Lexxy24/KaguraMD'
+                                    displayText: 'Sewa',
+                                    url: 'https://wa.me/62895345145330?text=Kak%20Saya%20Mau%20Sewa%20Bot'
                                 }
-                            }, {
-                                callButton: {
-                                    displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 822-7991-5237'
-                                }
-                            },{
-                                quickReplyButton: {
-                                    displayText: 'Status Bot',
-                                    id: 'ping'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Contact Owner',
-                                    id: 'owner'
-                                }  
                             }, {
                                 quickReplyButton: {
                                     displayText: 'List Menu',
@@ -3369,13 +3358,13 @@ Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
                             }]
                          let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
-                        kagura.send5ButImg(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, global.thumb, btn)
+                        kagura.send5ButImg(m.chat, anu, `© 𝘊reated By Bar`, global.thumb, btn)
                         } else if (setbot.templateGif) {
-                        kagura.send5ButGif(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, global.visoka, btn)
+                        kagura.send5ButGif(m.chat, anu, `© 𝘊reated By Bar`, global.visoka, btn)
                         } else if (setbot.templateVid) {
-                        kagura.send5ButVid(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, global.visoka, btn)
+                        kagura.send5ButVid(m.chat, anu, `© 𝘊reated By Bar`, global.visoka, btn)
                         } else if (setbot.templateMsg) {
-                        kagura.send5ButMsg(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, btn)
+                        kagura.send5ButMsg(m.chat, anu, `© 𝘊reated By Bar`, btn)
                         }
                      }
             break
