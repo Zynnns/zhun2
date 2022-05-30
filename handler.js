@@ -3240,6 +3240,32 @@ _*🇯🇵 : このボットの機能のリスト*_.
                         }
                      }
             break
+            case 'menu': {
+                            anu = `Hai Saya Adalah Asisten Kamu Yang Dibuat Oleh Bar Gunakan Dengan Bijak Jika Tidak Ingin Di Banned
+`
+                let btn = [{
+                                urlButton: {
+                                    displayText: 'Sewa',
+                                    url: 'https://wa.me/62895345145330?text=Kak%20Saya%20Mau%20Sewa%20Bot'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'List Menu',
+                                    id: 'fiturlist'
+                                }
+                            }]
+                         let setbot = db.data.settings[botNumber]
+                        if (setbot.templateImage) {
+                        kagura.send5ButImg(m.chat, anu, `© 𝘊reated By Bar`, global.thumb, btn)
+                        } else if (setbot.templateGif) {
+                        kagura.send5ButGif(m.chat, anu, `© 𝘊reated By Bar`, global.visoka, btn)
+                        } else if (setbot.templateVid) {
+                        kagura.send5ButVid(m.chat, anu, `© 𝘊reated By Bar`, global.visoka, btn)
+                        } else if (setbot.templateMsg) {
+                        kagura.send5ButMsg(m.chat, anu, `© 𝘊reated By Bar`, btn)
+                        }
+                     }
+            break
             default:
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
