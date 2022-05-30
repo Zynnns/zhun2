@@ -8,7 +8,7 @@ zenz: 'https://zenzapis.xyz',
 
 // Apikey Website Api
 global.APIKeys = {
-'https://zenzapis.xyz': 'BagasPrdn',
+'https://zenzapis.xyz': 'Netrogembel',
 }
 
 // Other
