@@ -2948,8 +2948,6 @@ case 'fiturlist': {
             }
             break
             case 'syaratketentuan': {
-                buffer = await
-getBuffer(`https://telegra.ph/file/5b8d30f91819ccc00dbe2.jpg`)
                 anu = `Syarat & Ketentuan *Z H E N - MD*
 
 • Z H E N - MD *hanya menyimpan nomor anda* di dalam database sebagai nomor user
@@ -2973,19 +2971,17 @@ _Regards : Bar_
                             }]                       
                          let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
-                        kagura.send5ButImg(m.chat, anu, kagura.user.name, global.thumb, btn)
+                        kagura.send5ButImg(m.chat, anu, `© 𝘊reated By Bar`, global.thumb, btn)
                         } else if (setbot.templateGif) {
-                        kagura.send5ButGif(m.chat, anu, kagura.user.name, global.visoka, btn)
+                        kagura.send5ButGif(m.chat, anu, `© 𝘊reated By Bar`, global.visoka, btn)
                         } else if (setbot.templateVid) {
-                        kagura.send5ButVid(m.chat, anu, kagura.user.name, global.visoka, btn)
+                        kagura.send5ButVid(m.chat, anu, `© 𝘊reated By Bar`, global.visoka, btn)
                         } else if (setbot.templateMsg) {
-                        kagura.send5ButMsg(m.chat, anu, kagura.user.name, btn)
+                        kagura.send5ButMsg(m.chat, anu, `© 𝘊reated By Bar`, btn)
                         }
                      }
             break
             case 'menu'
-                buffer = await
-getBuffer(`https://telegra.ph/file/22688aa4a1ec24f93d506.jpg`)
                 anu = `Hai Saya Adalah Asisten Kamu Yang Dibuat Oleh Bar Gunakan Dengan Bijak Jika Tidak Ingin Di Banned
 `
                 let btn = [{
@@ -3011,13 +3007,13 @@ getBuffer(`https://telegra.ph/file/22688aa4a1ec24f93d506.jpg`)
                             }]                       
                          let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
-                        kagura.send5ButImg(m.chat, anu, kagura.user.name, global.thumb, btn)
+                        kagura.send5ButImg(m.chat, anu, `© 𝘊reated By Bar`, global.thumb, btn)
                         } else if (setbot.templateGif) {
-                        kagura.send5ButGif(m.chat, anu, kagura.user.name, global.visoka, btn)
+                        kagura.send5ButGif(m.chat, anu, `© 𝘊reated By Bar`, global.visoka, btn)
                         } else if (setbot.templateVid) {
-                        kagura.send5ButVid(m.chat, anu, kagura.user.name, global.visoka, btn)
+                        kagura.send5ButVid(m.chat, anu, `© 𝘊reated By Bar`, global.visoka, btn)
                         } else if (setbot.templateMsg) {
-                        kagura.send5ButMsg(m.chat, anu, kagura.user.name, btn)
+                        kagura.send5ButMsg(m.chat, anu, `© 𝘊reated By Bar`, btn)
                         }
                      }
             break
