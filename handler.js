@@ -2961,17 +2961,21 @@ let capt = `⭔ Title: ${judul}
             break
             case 'webtoons': {
             if (!text) throw `Example : ${prefix + command} love`
-            let res = await fetchJson(api('zenz', '/webzone/webtoons', { query: text }, 'apikey'))
-            let capt = `Webtoons Search From : ${text}\n\n`
-            for (let i of res.result) {
-            capt += `⭔ Judul: ${i.judul}\n`
-            capt += `⭔ Like: ${i.like}\n`
-            capt += `⭔ Creator: ${i.creator}\n`
-            capt += `⭔ Genre: ${i.genre}\n`
-            capt += `⭔ Url: ${i.url}\n\n──────────────────────\n`
-            }
-            m.reply(capt)
-            }
+        let fetch = await fetchUrl(global.api("zenz", "/webzone/webtoons", { query: text }, "apikey"))
+        let caption = `Webtoons Search Query : ${toUpper(text)}\n\n`
+        for (let i of fetch.result) {
+            caption += `⭔ Judul : ${i.judul}\n`
+            caption += `⭔ Like : ${i.like}\n`
+            caption += `⭔ Creator : ${i.creator}\n`
+            caption += `⭔ Genre : ${i.genre}\n`
+            caption += `⭔ Thumbnail : ${i.thumbnail}\n`
+            caption += `⭔ Url : ${i.url}\n\n`
+        }
+        //kagura.sendFile(m.from, fetch.result[0].img, "", m, { caption }) yg gambarnya kena internet positif
+        kagura.sendText(m.from, caption, m)
+    },
+    isQuery: true
+}
             break
             case 'drakor': {
             if (!text) throw `Example : ${prefix + command} love`
