@@ -2965,10 +2965,15 @@ _Regards : Bar_
 `
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Sewa bot',
+                                    displayText: 'Sewa',
                                     url: 'https://wa.me/62895345145330?text=Kak%20Saya%20Mau%20Sewa%20Bot'
                                 }
-                            }]                       
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'List Menu',
+                                    id: 'allmenu'
+                                }
+                            }]
                          let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
                         kagura.send5ButImg(m.chat, anu, `© 𝘊reated By Bar`, global.thumb, btn)
@@ -2986,25 +2991,15 @@ _Regards : Bar_
 `
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Instagram',
-                                    url: 'https://instagram.com/parapencarimemers'
+                                    displayText: 'Sewa',
+                                    url: 'https://wa.me/62895345145330?text=Kak%20Saya%20Mau%20Sewa%20Bot'
                                 }
                             }, {
                                 quickReplyButton: {
                                     displayText: 'List Menu',
                                     id: 'allmenu'
                                 }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Owner Bot',
-                                    id: 'owner'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Syarat & Ketentuan',
-                                    id: 'syaratketentuan'
-                                }
-                            }]                       
+                            }]
                          let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
                         kagura.send5ButImg(m.chat, anu, `© 𝘊reated By Bar`, global.thumb, btn)
@@ -3017,7 +3012,7 @@ _Regards : Bar_
                         }
                      }
             break
-            case 'list': case 'allmenu': case 'help': case '?': {
+            case 'allmenu': {
                 anu = `Selamat ${salam} ${pushname} 👋
 Saya *${botname}*, Bot Ini Adalah Beta Multi-Device WhatsApp.
 Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
