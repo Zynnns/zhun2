@@ -1452,12 +1452,12 @@ break
                     let btn = [{
                                 urlButton: {
                                     displayText: 'Source Code',
-                                    url: 'https://github.com/Lexxy24/KaguraMD'
+                                    url: 'https://github.com/Zynnns'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: ' +62 822-7991-5237'
+                                    phoneNumber: ' +62 895-3451-45330'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1476,7 +1476,7 @@ break
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
-                      kagura.send5ButImg(i, txt, kagura.user.name, global.thumb, btn)
+                      kagura.send5ButImg(i, txt, kagura.user.name, global.visoka, btn)
                     }
                 m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
             }
@@ -1491,12 +1491,12 @@ break
 		    let btn = [{
                                 urlButton: {
                                     displayText: 'Source Code',
-                                    url: 'https://github.com/Lexxy24/KaguraMD'
+                                    url: 'https://github.com/Zynnns'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: ' +62 822-7991-5237'
+                                    phoneNumber: ' +62 895-3451-45330'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1515,7 +1515,7 @@ break
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
-                      kagura.send5ButImg(yoi, txt, kagura.user.name, global.thumb, btn)
+                      kagura.send5ButImg(yoi, txt, kagura.user.name, global.visoka, btn)
 		}
 		m.reply('Sukses Broadcast')
             }
