@@ -2947,7 +2947,7 @@ case 'fiturlist': {
                 }
             }
             break
-            case 'menu': {
+            case 'jumenu': {
                 anu = `Selamat ${salam} ${pushname} 👋
 Saya *${botname}*, Bot Ini Adalah Beta Multi-Device WhatsApp.
 Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
@@ -3251,7 +3251,7 @@ _*🇯🇵 : このボットの機能のリスト*_.
                             }, {
                                 quickReplyButton: {
                                     displayText: 'List Menu',
-                                    id: 'fiturlist'
+                                    id: 'jumenu'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
