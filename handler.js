@@ -2947,72 +2947,7 @@ case 'fiturlist': {
                 }
             }
             break
-            case 'syaratketentuan': {
-                anu = `Syarat & Ketentuan *Z H E N - MD*
-
-• Z H E N - MD *hanya menyimpan nomor anda* di dalam database sebagai nomor user
-• Z H E N - MD *tidak pernah meminta informasi pribadi* anda seperti alamat rumah, asal daerah, dan lain-lain
-• Z H E N - MD tidak menerima *Telpon / Video Call*
-• Dilarang *copy tampilan* bot
-• Dilarang melakukan *spam* terhadap bot
-• Z H E N - MD tidak menyimpan *data pribadi* anda
-• Z H E N - MD *tidak bertanggungjawab atas fitur apapun yang anda gunakan*
-• Z H E N - MD *tidak* menyimpan foto, video, atau media apapun yang anda kirimkan
-• Apabila menemukan bug, error, atau request fitur harap hubungi developer bot
-• Z H E N - MD berhak *memblokir* atau *ban* terhadap user dengan alasan maupun tanpa alasan
-
-_Regards : Bar_
-`
-                let btn = [{
-                                urlButton: {
-                                    displayText: 'Sewa',
-                                    url: 'https://wa.me/62895345145330?text=Kak%20Saya%20Mau%20Sewa%20Bot'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'List Menu',
-                                    id: 'allmenu'
-                                }
-                            }]
-                         let setbot = db.data.settings[botNumber]
-                        if (setbot.templateImage) {
-                        kagura.send5ButImg(m.chat, anu, `© 𝘊reated By Bar`, global.thumb, btn)
-                        } else if (setbot.templateGif) {
-                        kagura.send5ButGif(m.chat, anu, `© 𝘊reated By Bar`, global.visoka, btn)
-                        } else if (setbot.templateVid) {
-                        kagura.send5ButVid(m.chat, anu, `© 𝘊reated By Bar`, global.visoka, btn)
-                        } else if (setbot.templateMsg) {
-                        kagura.send5ButMsg(m.chat, anu, `© 𝘊reated By Bar`, btn)
-                        }
-                     }
-            break
-            case 'menu'
-                anu = `Hai Saya Adalah Asisten Kamu Yang Dibuat Oleh Bar Gunakan Dengan Bijak Jika Tidak Ingin Di Banned
-`
-                let btn = [{
-                                urlButton: {
-                                    displayText: 'Sewa',
-                                    url: 'https://wa.me/62895345145330?text=Kak%20Saya%20Mau%20Sewa%20Bot'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'List Menu',
-                                    id: 'allmenu'
-                                }
-                            }]
-                         let setbot = db.data.settings[botNumber]
-                        if (setbot.templateImage) {
-                        kagura.send5ButImg(m.chat, anu, `© 𝘊reated By Bar`, global.thumb, btn)
-                        } else if (setbot.templateGif) {
-                        kagura.send5ButGif(m.chat, anu, `© 𝘊reated By Bar`, global.visoka, btn)
-                        } else if (setbot.templateVid) {
-                        kagura.send5ButVid(m.chat, anu, `© 𝘊reated By Bar`, global.visoka, btn)
-                        } else if (setbot.templateMsg) {
-                        kagura.send5ButMsg(m.chat, anu, `© 𝘊reated By Bar`, btn)
-                        }
-                     }
-            break
-            case 'allmenu': {
+            case 'menu': {
                 anu = `Selamat ${salam} ${pushname} 👋
 Saya *${botname}*, Bot Ini Adalah Beta Multi-Device WhatsApp.
 Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
